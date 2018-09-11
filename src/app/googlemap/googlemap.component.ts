@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
-import { ViewChild } from "@angular/core";
+
 
 @Component({
   selector: 'app-googlemap',
