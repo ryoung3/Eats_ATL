@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GooglemapComponent } from './googlemap/googlemap.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
-
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +12,11 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
     RestaurantsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: '',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

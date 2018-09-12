@@ -2,22 +2,17 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
 
 
+
 @Component({
   selector: 'app-googlemap',
   templateUrl: './googlemap.component.html',
   styleUrls: ['./googlemap.component.css']
 })
-export class GooglemapComponent implements OnInit {
- @ViewChild('gmap') gmapElement: any;
-  map: google.maps.Map;
+export class GooglemapComponent {
+ 
+  title: string = 'My first AGM project';
+  lat: number = 33.753746;
+  lng: number = -84.386330;
 
-  ngOnInit() {
-    var mapProp = {
-      center: new google.maps.LatLng(18.5793, 73.8143),
-      zoom: 9,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
-  }
 
 }
