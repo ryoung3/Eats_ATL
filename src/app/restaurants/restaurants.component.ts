@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsComponent implements OnInit {
 
-  constructor() { }
+    restaurantName: String = "Jack In The Box";
+    address: String = "1234 Globbin Street";
+    description: String = "This restaurant is known for its delicious burgers and fries";
+    rating: any = "5 star rating";
+    customerReview: String = "This place is awesome! ";
+  
+    constructor() { }
 
   ngOnInit() {
   }
