@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Eats-ATL-app';
+
+  searchRestaurants():void {
+      alert("This search button was clicked ! ");
+  }
 }
