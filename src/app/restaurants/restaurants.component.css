@@ -1,3 +1,9 @@
+@media (max-width: 790px) {
+ .sidebar{
+visibility:hidden;
+}
+}
+
 .sidebar {
     position: fixed;
     top: 52px;
