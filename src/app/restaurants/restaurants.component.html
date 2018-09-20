@@ -2,11 +2,11 @@
   <div class="sidebar-sticky">
       <ul class="nav flex-column">
         <li class="nav item" *ngFor="let restaurant of restaurants">
-          <p> {{ name }} </p>
-          <p> {{ address }} </p>
-          <p> {{ description }} </p>
-          <p> {{ rating }} </p>
-          <p> {{ customerReview }} </p>
+          <p> {{ restaurant?.name }} </p>
+          <p> {{ restaurant?.address }} </p>
+          <p> {{ restaurant?.description }} </p>
+          <p> {{ restaurant?.rating }} </p>
+          <p> {{ restaurant?.customerReview }} </p>
         </li>
 
       </ul>
