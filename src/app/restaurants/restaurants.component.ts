@@ -7,11 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsComponent implements OnInit {
 
-    restaurantName: String = "Jack In The Box";
-    address: String = "1234 Globbin Street";
-    description: String = "This restaurant is known for its delicious burgers and fries";
-    rating: any = "5 star rating";
-    customerReview: String = "This place is awesome! ";
+  restaurants = [{
+    name: "Chruches",
+    address: "1234 Jackson Street",
+    description: "chicken joint",
+    rating: "5 stars",
+    customerReview: "good food"
+  },
+
+  {
+    name: "Blondies",
+    address: "4567 James Street",
+    description: "dessert joint",
+    rating: "5 stars",
+    customerReview: "good food"
+  },
+
+  {
+    name: "Chitpole",
+    address: "2389 Peachtree Street",
+    description: "mexican food",
+    rating: "5 stars",
+    customerReview: "good food"
+  },
+
+  {
+    name: "Atlanta Tech Village",
+    address: "3456 Piedmont Road",
+    description: "innovation center",
+    rating: "5 stars",
+    customerReview: "great place to learn"
+  }]
+    
   
     constructor() { }
 

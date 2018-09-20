@@ -3,7 +3,9 @@
 visibility:hidden;
 }
 }
-
+li {
+    color: white;
+}
 .sidebar {
     position: fixed;
     top: 52px;
