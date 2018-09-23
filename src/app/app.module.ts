@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { GooglemapComponent } from './googlemap/googlemap.component';
@@ -16,6 +17,7 @@ import { restaurantsService } from "src/app/restaurants/restaurants.service";
   imports: [
     BrowserModule,
     HttpClientModule,
+    NgbModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: '',
       libraries: ['places']
