@@ -1,5 +1,6 @@
 # EatsATLApp
 Udacity Front End NanoDegree (FEND) final project. EatsATL displays some of the highest rated eateries with the Atlanta,GA area. 
+Resturants are pulled from YELP API and Google Maps API used to display location. 
 
 
 
