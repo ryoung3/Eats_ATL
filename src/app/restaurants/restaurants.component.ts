@@ -7,7 +7,8 @@ import { restaurantsService } from './restaurants.service';
   styleUrls: ['./restaurants.component.css']
 })
 export class RestaurantsComponent implements OnInit {
-    restaurants: any[]
+    restaurants: any[];
+    restaurants2: any;
 
     constructor(private restaurantsService: restaurantsService){
         
