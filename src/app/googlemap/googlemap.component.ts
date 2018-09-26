@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component,Input, NgZone, OnInit, ViewChild } from '@angular/core';
 import { } from '@types/googlemaps';
 
 
