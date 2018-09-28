@@ -6,21 +6,12 @@ import { HttpClient } from "@angular/common/http";
 export class restaurantsService{
   
   yelp_URL: String;
-
-  constructor(private http: HttpClient){
-    
-  }
-
-   
-    getRestaurants(){
-        return this.restaurants;
-    }
- restaurants = [{
+  restaurants: any[] = [{
     name: "Chruches",
     address: "1234 Jackson Street",
     description: "chicken joint",
     rating: "5 stars",
-    customerReview: "good food"
+    customerReview: 'good food'
   },
 
   {
@@ -46,7 +37,14 @@ export class restaurantsService{
     rating: "5 stars",
     customerReview: "great place to learn"
   }];
+  constructor(private http: HttpClient){
+    
+  }
+ 
 
+  getRestaurants(){
+        return this.restaurants;
+    }
     
     
 }
