@@ -10,6 +10,7 @@ import { GooglemapComponent } from './googlemap/googlemap.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { AgmCoreModule,GoogleMapsAPIWrapper } from '@agm/core';
 import { restaurantsService } from "src/app/restaurants/restaurants.service";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { restaurantsService } from "src/app/restaurants/restaurants.service";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     NgbModule.forRoot(),
     AgmCoreModule.forRoot({
