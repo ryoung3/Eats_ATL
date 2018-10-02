@@ -15,10 +15,8 @@ export class RestaurantsComponent implements OnInit {
      }
 
   ngOnInit() {
-    this.restaurants = this.restaurantsService.getRestaurants().subscribe();
+    this.restaurants = this.restaurantsService.getRestaurants();
   }
 
-  search($event){
-    let q = $event.target.
-  }
+  
 }
