@@ -1,23 +1,27 @@
 <div style="text-align:center">
      <nav class="navbar navbar-dark bg-dark">
   <form class="form-inline">
-    
+      <mat-form-field>
         <input class="form-control mr-sm-2"  type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-     
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" (click)="searchRestaurants()">Search</button>
+      </mat-form-field>
   </form>
   </nav>
-    </div>
+</div>
 <nav class="col-md-2 d-md-black bg-dark sidebar">
 
   <div class="sidebar-sticky">
       <ul class="nav flex-column">
-        <li class="nav item" *ngFor="let restaurant of restaurants">
+        <li class="nav item"> 
+          <mat-autocomplete>
+            <mat-option *ngFor="let restaurant of restaurants">
           <p> {{ restaurant?.name }} </p>
           <p> {{ restaurant?.address }} </p>
           <p> {{ restaurant?.description }} </p>
           <p> {{ restaurant?.rating }} </p>
           <p> {{ restaurant?.customerReview }} </p>
+            </mat-option>
+          </mat-autocomplete>
         </li>
 
       </ul>
