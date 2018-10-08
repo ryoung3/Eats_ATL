@@ -9,9 +9,7 @@ import { restaurantsService } from './restaurants.service';
 export class RestaurantsComponent implements OnInit {
     restaurants: any[];
     restaurants2: any;
-    yelpURL: String = 'https://api.yelp.com/v3/businesses/search?location=atlanta&term=food';
-    yelpClientKey: String = 'koLImfX2STvD3TaBlzzvrtE5ZShAdLiNlXf-7hBHg7gNW1Xl1zdMFvVkaqWGsaYUxKcCwpfcirRo74Wa6jod1GZjjL9gN8wP-hFi75N3E9j2eXNFpPLO5uS_YUyoW3Yx';
-    yelpClientID: String = 'NvTy79AUn_ne6VIkVBztEQ';
+   
 
     constructor(private restaurantsService: restaurantsService){
         
