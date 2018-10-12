@@ -8,17 +8,23 @@ import { IRestaurants } from "src/app/restaurants/restaurants";
   styleUrls: ['./restaurants.component.css']
 })
 export class RestaurantsComponent implements OnInit {
-    restaurants: any[];
-    restaurants2: any;
-    RestaurantsList: IRestaurants[];
+  errorMessage: any;
+  RestaurantsList: IRestaurants[] = [];
 
     constructor(private restaurantsService: restaurantsService){
         
      }
 
   ngOnInit() {
-    this.RestaurantsList = this.restaurantsService.getRestaurants();
-  }
+this.restaurantsService.getRestaurants().subscribe(
+          restaurants => { 
+               this.RestaurantsList = RestaurantsList;
+               
+          },
+          error => this.errorMessage = <any>error
+      );
+      
+  }  }
 
   searchYelpAPI(){
 
